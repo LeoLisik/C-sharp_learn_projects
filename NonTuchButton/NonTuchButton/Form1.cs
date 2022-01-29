@@ -21,11 +21,11 @@ namespace NonTuchButton
 
         private void TouchButton_Click(object sender, EventArgs e)
         {
-            label1.Text = "Поздравляю, ты совершил невозможное";
+            label1.Text = "Congratulations, you've done the impossible!";
             if (p.X < TouchButton.Location.X || p.X > (TouchButton.Location.X + TouchButton.Size.Width))
-            { label1.Text = "Ввод с клавиатуры запрещён!"; }
+            { label1.Text = "Keyboard input disabled!"; }
             if (p.Y < TouchButton.Location.Y || p.Y > (TouchButton.Location.Y + TouchButton.Height))
-            { label1.Text = "Ввод с клавиатуры запрещён!"; }
+            { label1.Text = "Keyboard input disabled!"; }
             label1.Location = new Point(this.Width / 2 - TouchButton.Size.Width, 10);
         }
 

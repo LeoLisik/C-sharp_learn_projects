@@ -18,3 +18,13 @@ C:\Users\trufe\source\repos\NonTuchButton\NonTuchButton\obj\Debug\NonTuchButton.
 C:\Users\trufe\source\repos\NonTuchButton\NonTuchButton\obj\Debug\NonTuchButton.csproj.CoreCompileInputs.cache
 C:\Users\trufe\source\repos\NonTuchButton\NonTuchButton\obj\Debug\NonTuchButton.exe
 C:\Users\trufe\source\repos\NonTuchButton\NonTuchButton\obj\Debug\NonTuchButton.pdb
+F:\C#\NonTuchButton\NonTuchButton\bin\Debug\NonTuchButton.exe.config
+F:\C#\NonTuchButton\NonTuchButton\bin\Debug\NonTuchButton.exe
+F:\C#\NonTuchButton\NonTuchButton\bin\Debug\NonTuchButton.pdb
+F:\C#\NonTuchButton\NonTuchButton\obj\Debug\NonTuchButton.csproj.AssemblyReference.cache
+F:\C#\NonTuchButton\NonTuchButton\obj\Debug\NonTuchButton.Form1.resources
+F:\C#\NonTuchButton\NonTuchButton\obj\Debug\NonTuchButton.Properties.Resources.resources
+F:\C#\NonTuchButton\NonTuchButton\obj\Debug\NonTuchButton.csproj.GenerateResource.cache
+F:\C#\NonTuchButton\NonTuchButton\obj\Debug\NonTuchButton.csproj.CoreCompileInputs.cache
+F:\C#\NonTuchButton\NonTuchButton\obj\Debug\NonTuchButton.exe
+F:\C#\NonTuchButton\NonTuchButton\obj\Debug\NonTuchButton.pdb

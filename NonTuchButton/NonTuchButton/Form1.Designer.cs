@@ -42,7 +42,7 @@ namespace NonTuchButton
             this.TouchButton.Name = "TouchButton";
             this.TouchButton.Size = new System.Drawing.Size(128, 33);
             this.TouchButton.TabIndex = 0;
-            this.TouchButton.Text = "Нажми меня";
+            this.TouchButton.Text = "Click me";
             this.TouchButton.UseVisualStyleBackColor = false;
             this.TouchButton.Click += new System.EventHandler(this.TouchButton_Click);
             this.TouchButton.MouseEnter += new System.EventHandler(this.TouchButton_MouseEnter);
@@ -69,7 +69,7 @@ namespace NonTuchButton
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Догонялки с кнопкой";
+            this.Text = "Button catchers";
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             this.ResumeLayout(false);
             this.PerformLayout();
