@@ -17,32 +17,17 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private bool Check()
+        private bool Check(string CheckedStr)
         {
-            int p = 0;
-            string a=textBox1.Text, b=textBox2.Text;
-            if (a.Length == 0 || b.Length == 0) { return false; }
-            for (int i = 0; i < a.Length; i++)
-            {
-                if ((a[i] <= 47 || a[i] >= 58) && (a[i] != 44 && a[i] != 45)) { return false; }
-                if (a[i] == 44) { p++; if (p > 1) { return false; } }
-                if (a[i] == 45 && i != 0) { return false; }
-                if ((a[i] > 47 || a[i] < 58) && (i + 1 == a.Length)) { return false; }
-            }
-            for (int i = 0; i < b.Length; i++)
-            {
-                if ((b[i] <= 47 || b[i] >= 58) && (b[i] != 45 && b[i] != 44)) { return false; }
-                if (b[i] == 44) { p++; if (p > 1) { return false; } }
-                if (b[i] == 45 && i != 0) { return false; }
-                if ((b[i] > 47 || b[i] < 58) && (i + 1 == b.Length)) { return false; }
-            }
+            if (CheckedStr[CheckedStr.Length - 1] < '0' || CheckedStr[CheckedStr.Length - 1] > '9') { return false; }
+            if (CheckedStr.LastIndexOf(',') - CheckedStr.IndexOf(',') > 0 || CheckedStr.LastIndexOf('-') > 0) { return false; }
             return true;
         }
 
         void Button_click(object sender, EventArgs e)
         {
             Button button1 = (Button)sender;
-            if (Check())
+            if (Check(textBox1.Text) && Check(textBox2.Text))
             {
                 switch (button1.Text[0])
                 {
@@ -68,12 +53,22 @@ namespace WindowsFormsApp1
                         }
                 }
             } else {
-                textBox3.Text = "ERROR";
+                MessageBox.Show("You made a mistake somewhere. Check the entered numbers.");
             }
         }
         private void button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsNumber(e.KeyChar) && e.KeyChar != '-' && e.KeyChar != ',' && !Char.IsControl(e.KeyChar))
+            {
+                e.KeyChar = '0';
+                MessageBox.Show("You can input only nubers, minus and comma!");
+                return;
+            }
         }
     }
 }

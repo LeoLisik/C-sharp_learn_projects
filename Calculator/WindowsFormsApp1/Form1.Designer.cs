@@ -58,15 +58,16 @@ namespace WindowsFormsApp1
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(9, 91);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 2;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox_KeyPress);
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(122, 91);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(76, 20);
             this.textBox2.TabIndex = 3;
@@ -94,7 +95,7 @@ namespace WindowsFormsApp1
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(9, 127);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(68, 37);
             this.button1.TabIndex = 6;
@@ -105,7 +106,7 @@ namespace WindowsFormsApp1
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(129, 127);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(68, 37);
             this.button2.TabIndex = 7;
@@ -116,7 +117,7 @@ namespace WindowsFormsApp1
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(9, 168);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(68, 37);
             this.button3.TabIndex = 8;
@@ -127,7 +128,7 @@ namespace WindowsFormsApp1
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(129, 168);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(68, 37);
             this.button4.TabIndex = 9;
@@ -139,7 +140,7 @@ namespace WindowsFormsApp1
             // 
             this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(72, 256);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(76, 20);
             this.textBox3.TabIndex = 10;
@@ -159,7 +160,7 @@ namespace WindowsFormsApp1
             // 
             this.button5.BackColor = System.Drawing.Color.SlateBlue;
             this.button5.Location = new System.Drawing.Point(72, 292);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 43);
             this.button5.TabIndex = 12;
@@ -171,6 +172,7 @@ namespace WindowsFormsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.Purple;
             this.ClientSize = new System.Drawing.Size(202, 344);
             this.Controls.Add(this.button5);
@@ -185,9 +187,11 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(218, 383);
+            this.MinimumSize = new System.Drawing.Size(218, 383);
             this.Name = "Form";
-            this.Text = "Калькулятор";
+            this.Text = "Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
