@@ -1,7 +1,0 @@
-F:\C#\Project4Remake\Project4Remake\bin\Debug\Project4Remake.exe.config
-F:\C#\Project4Remake\Project4Remake\bin\Debug\Project4Remake.exe
-F:\C#\Project4Remake\Project4Remake\bin\Debug\Project4Remake.pdb
-F:\C#\Project4Remake\Project4Remake\obj\Debug\Project4Remake.csproj.AssemblyReference.cache
-F:\C#\Project4Remake\Project4Remake\obj\Debug\Project4Remake.csproj.CoreCompileInputs.cache
-F:\C#\Project4Remake\Project4Remake\obj\Debug\Project4Remake.exe
-F:\C#\Project4Remake\Project4Remake\obj\Debug\Project4Remake.pdb
